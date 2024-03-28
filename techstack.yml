@@ -1,11 +1,12 @@
 repo_name: bob-wise0/yarn-deduplicate
-report_id: f9315116547c1cc8552269736c5cc049
+report_id: 80a69525db213623ef288dccdcb27318
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-08T21:00:34+00:00'
+timestamp: '2024-03-28T08:21:27+00:00'
 requested_by: scinos
 provider: github
 branch: master
-detected_tools_count: 22
+detected_tools_count: 23
 tools:
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate
   detection_source: Repo Metadata
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
@@ -26,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate
   detection_source: Repo Metadata
 - name: Babel
   description: Use next generation JavaScript, today.
@@ -37,8 +40,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: JavaScript Compilers
   image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
-  detection_source_url: yarn.lock
-  detection_source: package.json
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
+  detection_source: babel.config.js
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2022-04-20 18:01:51.000000000 Z
 - name: ESLint
   description: The fully pluggable JavaScript code quality tool
   website_url: http://eslint.org/
@@ -48,7 +53,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/package.json
   detection_source: package.json
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2017-06-30 01:14:27.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -57,6 +65,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -66,7 +75,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/.github/workflows/node.js.yml
   detection_source: ".github/workflows/node.js.yml"
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2022-03-15 21:13:41.000000000 Z
 - name: Jest
   description: Painless JavaScript Unit Testing
   website_url: http://facebook.github.io/jest/
@@ -77,10 +89,24 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/service/830/jest.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2017-06-30 01:14:27.000000000 Z
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2017-06-30 01:14:27.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.8.1
   license: MIT
@@ -89,8 +115,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:52:20.000000000 Z
 - name: Yarn
   description: A new package manager for JavaScript
   website_url: https://yarnpkg.com/
@@ -99,7 +127,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
-  detection_source: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/tests/fixtures/yarn.lock
+  detection_source: tests/fixtures/yarn.lock
+  last_updated_by: Felipe Matos Santana
+  last_updated_on: 2018-10-30 01:04:13.000000000 Z
 - name: npm
   description: The package manager for JavaScript.
   website_url: https://www.npmjs.com/
@@ -108,13 +139,19 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/package.json
   detection_source: package.json
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2017-06-30 01:14:27.000000000 Z
 - name: NPM Trends
   website_url: https://www.npmtrends.com/
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/12294/empty-logo-square.png
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/package.json
   detection_source: package.json
+  last_updated_by: Sergio Cinos
+  last_updated_on: 2017-06-30 01:14:27.000000000 Z
 - name: "@babel/core"
   description: Babel compiler core
   package_url: https://www.npmjs.com/@babel/core
@@ -125,8 +162,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 11:54:29.000000000 Z
 - name: "@babel/preset-env"
   description: A Babel preset for each environment
   package_url: https://www.npmjs.com/@babel/preset-env
@@ -137,8 +176,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15819/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 11:54:29.000000000 Z
 - name: "@babel/preset-typescript"
   description: Babel preset for TypeScript
   package_url: https://www.npmjs.com/@babel/preset-typescript
@@ -149,8 +190,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16084/default_d4e765f8a43dcfd232c8b9ee9732058bc27c727a.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:59:16.000000000 Z
 - name: "@types/jest"
   description: TypeScript definitions for Jest
   package_url: https://www.npmjs.com/@types/jest
@@ -161,8 +204,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:59:16.000000000 Z
 - name: "@types/semver"
   description: TypeScript definitions for semver
   package_url: https://www.npmjs.com/@types/semver
@@ -173,8 +218,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16694/default_4b738bf1758d38dddd276589bbea47fca5a990df.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:59:16.000000000 Z
 - name: commander
   description: The complete solution for node.js command-line programs
   package_url: https://www.npmjs.com/commander
@@ -185,8 +232,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15829/default_50135978d26eba7c09093ceb23b96d522898e4eb.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 11:30:28.000000000 Z
 - name: eslint-config-prettier
   description: Turns off all rules that are unnecessary or might conflict with Prettier
   package_url: https://www.npmjs.com/eslint-config-prettier
@@ -197,8 +246,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:52:28.000000000 Z
 - name: eslint-plugin-jest
   description: Eslint rules for Jest
   package_url: https://www.npmjs.com/eslint-plugin-jest
@@ -209,8 +260,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15996/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:59:16.000000000 Z
 - name: eslint-plugin-prettier
   description: Runs prettier as an eslint rule
   package_url: https://www.npmjs.com/eslint-plugin-prettier
@@ -221,8 +274,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:52:28.000000000 Z
 - name: release-it
   description: CLI release tool for Git repos and npm packages
   package_url: https://www.npmjs.com/release-it
@@ -233,8 +288,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16490/default_2e7c1d6d94467a56325f7c984571015e8713a450.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 13:59:04.000000000 Z
 - name: tslib
   description: Runtime library for TypeScript helper functions
   package_url: https://www.npmjs.com/tslib
@@ -245,5 +302,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15853/default_97d4687bd07ff1bb963fd566c84e7cbf7c73bbee.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/bob-wise0/yarn-deduplicate/blob/master/yarn.lock
   detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2022-12-11 11:54:08.000000000 Z
